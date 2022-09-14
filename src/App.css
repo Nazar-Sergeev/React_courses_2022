@@ -1,0 +1,24 @@
+body{
+    background: grey;
+}
+
+.wrap{
+    display: flex;
+}
+
+.img {
+box-shadow: 3px 2px 4px black;
+}
+
+.simpson-block{
+    box-sizing: border-box;
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: justify;
+    box-shadow: 1px 3px 6px black;
+}
+
+.wrap-simpsons{
+    margin-left: 50px;
+}

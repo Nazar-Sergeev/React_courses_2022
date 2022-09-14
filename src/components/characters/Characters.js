@@ -5,17 +5,16 @@ export default function Characters() {
 
     let [characters, setCharacters] = useState([]);
 
-                console.log(characters);
         fetch('https://rickandmortyapi.com/api/character')
             .then(response => response.json())
             .then(value => {
-                setCharacters(value.results)
+                setCharacters(value.results.slice(0, 8))
             });
 
     return (
         <div>
             {
-                characters.map(character => <Character key={character.id} item = {character}/>).slice(0, 6)
+                characters.map(character => <Character key={character.id} item = {character}/>)
             }
         </div>
     );
