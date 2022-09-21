@@ -1,11 +1,14 @@
-
 import './App.css'
+import Users from "./components/users/Users";
+import Launches from "./components/launches/Launches";
 
 function App() {
 
     return (
         <div>
-            <h2>hello</h2>
+            <Users/>
+            <hr/>
+            <Launches/>
         </div>
     );
 }
